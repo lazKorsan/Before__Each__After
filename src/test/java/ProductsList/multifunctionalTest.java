@@ -24,7 +24,7 @@ public class multifunctionalTest {
 
 
     @BeforeEach
-public void setUp(){
+public void setUp(){  // part2
         driver = BeforeEach_AfterEach.createDriver();
 
         }
@@ -35,10 +35,11 @@ public void setUp(){
         }
 
         @Test
-    public void test01(){
+    public void test01(){ //part3
             driver.get("https://testotomasyonu.com/category/7/products");
 
-          electronicsProductsList = driver.findElements(By.xpath(" //a[@class='prod-title mb-3 ']")) ;
+          electronicsProductsList = driver
+                  .findElements(By.xpath(" //a[@class='prod-title mb-3 ']")) ;
 
             System.out.println("Ürün sayısı: " + electronicsProductsList.size());
             System.out.println("Ürünler:");

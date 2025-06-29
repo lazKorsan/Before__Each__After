@@ -39,6 +39,8 @@ public class Electonics {
         System.out.println("Ürünler:");
         for (WebElement urun : products) {
             System.out.println(urun.getText());
+
+
         }
 
     }
