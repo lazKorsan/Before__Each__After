@@ -4,10 +4,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import utilities.BeforeEach_AfterEach;
+import utilities.TestBase;
 import utilities.ReusableMethods;
 
 import java.util.List;
@@ -19,7 +18,7 @@ public class Test_01_BeforeEach_AfterEach {
   @BeforeEach
 
 public void setUp(){
-      driver = BeforeEach_AfterEach.createDriver() ;
+      driver = TestBase.createDriver() ;
   }
 
   @AfterEach

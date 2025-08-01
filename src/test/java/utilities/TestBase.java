@@ -6,12 +6,12 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.time.Duration;
 
-public class BeforeEach_AfterEach {
+public class TestBase {
     public static WebDriver createDriver() {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("force-device-scale-factor=1.0");
         options.addArguments("high-dpi-support=1.0");
-        options.addArguments("--disable-notifications");
+       // options.addArguments("--disable-notifications");
         WebDriver driver = new ChromeDriver(options);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

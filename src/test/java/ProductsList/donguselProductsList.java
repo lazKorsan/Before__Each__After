@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import utilities.BeforeEach_AfterEach;
+import utilities.TestBase;
 import utilities.ReusableMethods;
 
 import java.time.Duration;
@@ -24,7 +24,7 @@ public class donguselProductsList {
     @BeforeEach
 
     public void setUp(){
-        driver = BeforeEach_AfterEach.createDriver() ;
+        driver = TestBase.createDriver() ;
 
     }
 
@@ -47,7 +47,7 @@ public class donguselProductsList {
             kategoriler = driver.findElements(By.cssSelector("ul.flex > li.has-sub > a"));
             WebElement kategori = kategoriler.get(i);
             String kategoriAdi = kategori.getText();
-            kategori.click();
+            kategori.click();//,
 
             // Sayfa yüklenmesini bekle (örneğin ürün kutusu çıkana kadar)
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));

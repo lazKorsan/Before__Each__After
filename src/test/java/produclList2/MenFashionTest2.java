@@ -5,7 +5,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
-import utilities.BeforeEach_AfterEach;
+import utilities.TestBase;
 import utilities.ReusableMethods;
 import utilities.TestUtils;
 
@@ -15,7 +15,7 @@ public class MenFashionTest2 {
 
     @BeforeEach
     public void setUp() {
-        driver = BeforeEach_AfterEach.createDriver();
+        driver = TestBase.createDriver();
     }
 
     @AfterEach

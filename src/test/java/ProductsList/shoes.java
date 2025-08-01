@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import utilities.BeforeEach_AfterEach;
+import utilities.TestBase;
 import utilities.ReusableMethods;
 
 import java.util.List;
@@ -19,7 +19,7 @@ public class shoes {
     @BeforeEach
 
     public void setUp(){
-        driver = BeforeEach_AfterEach.createDriver() ;
+        driver = TestBase.createDriver() ;
 
     }
 

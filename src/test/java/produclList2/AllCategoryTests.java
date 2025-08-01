@@ -5,7 +5,7 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
-import utilities.BeforeEach_AfterEach;
+import utilities.TestBase;
 import utilities.ReusableMethods;
 import utilities.TestUtils;
 
@@ -15,7 +15,7 @@ public class AllCategoryTests {
 
     @BeforeAll
     public static void setUp() {
-        driver = BeforeEach_AfterEach.createDriver();
+        driver = TestBase.createDriver();
     }
 
     @AfterAll
